@@ -9,9 +9,8 @@
     menuBtnCls.addEventListener('click', toggleModal);
 
     function toggleModal() {
-      menuBtnOpn.classList.toggle("header__button--is-open");
-      menuBtnCls.classList.toggle("header__button--is-open");
-      menuCont.classList.toggle("menu-container--is-hidden");
+     
+      menuCont.classList.toggle("is-open");
     }
   }
 )();

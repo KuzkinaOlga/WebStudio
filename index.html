@@ -21,10 +21,10 @@
     <!------header-->
     <header class="header block">
       <div class="container main-nav">
-        <a class="header-nav__logo" href="./index.html"
-          ><span class="header-nav__web">Web</span>Studio</a
-        >
-        <div class="mobile-menu">
+        <a class="header-nav__logo" href="./index.html"><span class="header-nav__web">Web</span>Studio</a>
+          <button class="mobile-menu__button-open" type="button" data-menu-open>open</button>
+        <div class="mobile-menu" data-menu-container>
+        <button class="mobile-menu__button-close" type="button" data-menu-close>close</button>
           <nav class="header-nav">
             <ul class="site-nav">
               <li class="site-nav__item">
@@ -54,7 +54,7 @@
               >
             </li>
           </ul>
-          <ul>
+          <ul class="mobile-menu__social">
             <li><a href="">inst</a></li>
             <li><a href="">fb</a></li>
             <li><a href="">ld</a></li>
@@ -482,5 +482,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
