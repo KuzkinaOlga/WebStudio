@@ -95,7 +95,7 @@ address {
   border-bottom: 1px solid #ececec;
 }
 
-.header-nav .header-nav__logo {
+.header-nav__logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -104,7 +104,7 @@ address {
   text-decoration: none;
 }
 
-.header-nav .header-nav__web {
+.header-nav__web {
   color: var(--theme-color);
 }
 
@@ -136,8 +136,16 @@ address {
   }
 }
 
-.site-nav__item:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (max-width: 767px) {
+  .site-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
@@ -182,10 +190,6 @@ address {
 }
 
 .linkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
   font-family: var(--text-primery);
   font-weight: 500;
   font-size: 14px;
@@ -193,19 +197,6 @@ address {
   letter-spacing: 0.02em;
   color: var(--text-primery);
   text-decoration: none;
-}
-
-.linkbox .linkbox__item {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .linkbox .linkbox__item + .linkbox__item {
