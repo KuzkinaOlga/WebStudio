@@ -15,39 +15,52 @@
 </head>
 <body>
     <!-----------------------header----------------------------->
-    <header class="header">
+    <header class="header block">
         <div class="container main-nav">
-            <nav class="header-nav">
-                <a class="header-nav__logo" href="./index.html"><span class="header-nav__web">Web</span>Studio</a>
-                <ul class="site-nav">
-                    <li class="site-nav__item"><a class="site-nav__link"
-                            href="./index.html">Студия</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="./portfolio.html">Портфолио</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+            <a class="header-nav__logo" href="./index.html"><span class="header-nav__web">Web</span>Studio</a>
+            <button class="mobile-menu__button-open" type="button" data-menu-open>open</button>
+            <div class="mobile-menu" data-menu-container>
+                <button class="mobile-menu__button-close" type="button" data-menu-close>close</button>
+                <nav class="header-nav">
+                    <ul class="site-nav">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="linkbox">
+                    <li class="linkbox__item envelope">
+                        <a class="linkbox__link" href="mailto:info@devstudio.com">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="linkbox__item phone">
+                        <a class="linkbox__link" href="tel:+380961111111">
+                            <svg>
+                                <use href="./images/icons/sprite.svg#phone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="linkbox">
-                <li class="linkbox__item envelope">
-                    <a class="linkbox__link" href="mailto:info@devstudio.com">
-                        <svg>
-                            <use href='./images/icons/sprite.svg#envelope'></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="linkbox__item phone">
-                    <a class="linkbox__link" href="tel:+380961111111">
-                        <svg>
-                            <use href='./images/icons/sprite.svg#phone'></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
+                <ul class="mobile-menu__social">
+                    <li><a href="">inst</a></li>
+                    <li><a href="">fb</a></li>
+                    <li><a href="">ld</a></li>
+                    <li><a href="">tweeter</a></li>
+                </ul>
+            </div>
         </div>
-    </header> 
+    </header>
          <!--------------buttoms navigation-->
     <main>
   
-        <section class="portfolio">
+        <section class="portfolio block">
         <div class="container" >
         <ul class="portfolios-buttons">
         <li class="portfolios-buttons__item"><button type="button" class="portfolios-buttons__name">Все</button></li>
@@ -198,55 +211,67 @@
     </section>
     </main>
     <!------------------------section footer----------->
-    <footer class="footer">
+    <footer class="footer block">
         <div class="container footer-main">
             <div class="footer-main__list">
                 <a class="footer-main__logo" href="./index.html"><span class="footer-main__logo-web">Web</span>Studio</a>
-                <address class="footer-main__adress footer-main__item">г. Киев, пр-т Леси Украинки, 26</address>
+                <address class="footer-main__adress footer-main__item">
+                    г. Киев, пр-т Леси Украинки, 26
+                </address>
                 <ul class="footer-main__contacts">
-                    <li class="footer-main__item"><a class="footer-main__link"
-                            href="mailto:info@example.com">info@example.com</a></li>
-                    <li class="footer-main__item"><a class="footer-main__link" href="tel:+380991111111">+38 099 111 11
-                            11</a></li>
+                    <li class="footer-main__item">
+                        <a class="footer-main__link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="footer-main__item">
+                        <a class="footer-main__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
                 </ul>
             </div>
             <div class="media-footer">
                 <h3 class="media-footer__title">присоединяйтесь</h3>
                 <ul class="media-footer__social">
-                    <li class="media-footer__zone"><a href="#" class="media-footer__link">
+                    <li class="media-footer__zone">
+                        <a href="#" class="media-footer__link">
                             <svg class="media-footer__icon">
-                                <use href='./images/icons/sprite.svg#instagram'></use>
+                                <use href="./images/icons/sprite.svg#instagram"></use>
                             </svg>
-                        </a></li>
-                    <li class="media-footer__zone"><a href="#" class="media-footer__link">
+                        </a>
+                    </li>
+                    <li class="media-footer__zone">
+                        <a href="#" class="media-footer__link">
                             <svg class="media-footer__icon">
-                                <use href='./images/icons/sprite.svg#twitter'></use>
+                                <use href="./images/icons/sprite.svg#twitter"></use>
                             </svg>
-                        </a></li>
-                    <li class="media-footer__zone"><a href="#" class="media-footer__link">
+                        </a>
+                    </li>
+                    <li class="media-footer__zone">
+                        <a href="#" class="media-footer__link">
                             <svg class="media-footer__icon">
-                                <use href='./images/icons/sprite.svg#facebook'></use>
+                                <use href="./images/icons/sprite.svg#facebook"></use>
                             </svg>
-                        </a></li>
-                    <li class="media-footer__zone"><a href="#" class="media-footer__link">
+                        </a>
+                    </li>
+                    <li class="media-footer__zone">
+                        <a href="#" class="media-footer__link">
                             <svg class="media-footer__icon">
-                                <use href='./images/icons/sprite.svg#linkedin'></use>
+                                <use href="./images/icons/sprite.svg#linkedin"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
             </div>
     
-    
-            <!----------------footer subscription--------->
+            <!----------------footer subscription------->
             <form class="subscription">
                 <h3 class="subscription__label">Подпишитесь на рассылку</h3>
                 <div class="subscription__form">
                     <input class="subscription__input" type="email" name="subscription" id="subscription"
-                        placeholder="E-mail">
-                    <button type="submit" class="subscription__button">Подписаться
+                        placeholder="E-mail" />
+                    <button type="submit" class="subscription__button">
+                        Подписаться
     
                         <svg class="subscription__icon">
-                            <use href='./images/icons/sprite.svg#icon-send'></use>
+                            <use href="./images/icons/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
                 </div>
