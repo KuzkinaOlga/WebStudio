@@ -60,12 +60,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin: -15px;
   }
 }
 .portfolio-list__item {
-  display: block;
-  width: 100%;
   margin: 15px;
   @media screen and(min-width: 768px) {
     margin: 15px;
@@ -83,7 +82,6 @@
 
 .portfolio-list__item-thumb {
   position: relative;
-  width: 100%;
   overflow: hidden;
 }
 .portfolio-list__item-thumb:hover::before {
@@ -142,12 +140,12 @@
 }
 
 .portfolio-list > .portfolio-list__item:nth-last-child(-n + 3) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
   }
 }
 .portfolio-list > .portfolio-list__item:nth-child(3n) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 0px;
   }
 }
