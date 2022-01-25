@@ -95,7 +95,8 @@
     flex-direction: column-reverse;
   }
   .linkbox__item {
-    align-items: center;
+    display: flex;
+
     margin-bottom: 32px;
     @media screen and (min-width: 1200px) {
       margin-left: auto;
