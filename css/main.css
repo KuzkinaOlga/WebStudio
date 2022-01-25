@@ -134,6 +134,12 @@ address {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    padding-bottom: 306px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -208,25 +214,34 @@ address {
   text-decoration: none;
 }
 
-.linkbox .linkbox__item {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 @media screen and (max-width: 767px) {
-  .linkbox .linkbox__item {
+  .linkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+}
+
+.linkbox .linkbox__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  .linkbox .linkbox__item {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -280,7 +295,7 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .linkbox__link {
+  .linkbox-link__phone {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
@@ -289,16 +304,40 @@ address {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .linkbox-link__envelope {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
 .envelope svg {
   width: 19px;
   height: 12px;
   margin-right: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .envelope svg {
+    display: block;
+  }
 }
 
 .phone svg {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .phone svg {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {

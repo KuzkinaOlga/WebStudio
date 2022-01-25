@@ -26,6 +26,10 @@
   }
 }
 .site-nav {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 306px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -86,13 +90,17 @@
   letter-spacing: 0.02em;
   color: var(--text-primery);
   text-decoration: none;
-  .linkbox__item {
-    margin-left: auto;
+  @media screen and (max-width: 767px) {
     display: flex;
+    flex-direction: column-reverse;
+  }
+  .linkbox__item {
     align-items: center;
-    justify-content: center;
-    @media screen and (max-width: 767px) {
-      flex-direction: column-reverse;
+    margin-bottom: 32px;
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
     }
   }
   @media screen and (min-width: 768px) {
@@ -136,6 +144,8 @@
     color: var(--theme-color);
     fill: var(--theme-color);
   }
+}
+.linkbox-link__phone {
   @media screen and (max-width: 767px) {
     font-weight: 500;
     font-size: 34px;
@@ -144,17 +154,35 @@
     color: #2196f3;
   }
 }
+.linkbox-link__envelope {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+}
 
 .envelope svg {
   width: 19px;
   height: 12px;
   margin-right: 10px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .phone svg {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .mobile-menu {
