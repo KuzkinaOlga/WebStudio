@@ -46,7 +46,6 @@
 
 .site-nav__link {
   position: relative;
-  // display: flex;
   font-family: var(--tittle-text-color);
   font-weight: 500;
   font-size: 40px;
@@ -97,7 +96,6 @@
   .linkbox__item {
     display: flex;
 
-    margin-bottom: 32px;
     @media screen and (min-width: 1200px) {
       margin-left: auto;
       display: flex;
@@ -105,7 +103,7 @@
     }
   }
   @media screen and (min-width: 768px) {
-    margin-left: auto;
+    margin-left: 106px;
     padding-top: 21px;
     padding-bottom: 21px;
     width: 100%;
@@ -144,6 +142,12 @@
   &:focus {
     color: var(--theme-color);
     fill: var(--theme-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
   }
 }
 .linkbox-link__phone {
