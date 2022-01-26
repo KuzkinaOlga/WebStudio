@@ -103,7 +103,7 @@
     }
   }
   @media screen and (min-width: 768px) {
-    margin-left: 106px;
+    margin-left: 80px;
     padding-top: 21px;
     padding-bottom: 21px;
     width: 100%;
@@ -117,7 +117,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
+    margin-left: 106px;
     padding-top: 32px;
     padding-bottom: 32px;
     &:not(:last-child) {
